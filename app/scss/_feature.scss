@@ -1,0 +1,51 @@
+.features {
+  @include breakpoint-up(large) {
+    display: flex;
+    padding-bottom: 120px;
+  }
+}
+
+.feature {
+  @include breakpoint-up(large) {
+    padding-left: 80px;
+  }
+
+  &__texts {
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+
+    text-align: center;
+    @include breakpoint-up(large) {
+      h2 {
+        text-align: left;
+
+        font-size: 2.31rem;
+        line-height: 3rem;
+        color: $DarkBlue;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    p {
+      line-height: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__item {
+    margin-bottom: 35px;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    line-height: 3rem;
+    color: $DarkBlue;
+    margin-bottom: -3px;
+  }
+
+  &__description {
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 50px;
+  }
+}

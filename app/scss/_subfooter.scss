@@ -1,0 +1,17 @@
+.subfooters {
+  display: flex;
+  background-color: $BrightRed;
+}
+
+.subfooter {
+  flex: 1;
+
+  &__text {
+    font-size: 2.31rem;
+    color: white;
+    text-align: left;
+  }
+
+  &__botao {
+  }
+}
